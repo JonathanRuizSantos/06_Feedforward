@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "feedFordward", "feedFordward.csproj", "{B6DC6BCF-878D-4C6D-AB74-0D2C04EA624E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DC6BCF-878D-4C6D-AB74-0D2C04EA624E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DC6BCF-878D-4C6D-AB74-0D2C04EA624E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DC6BCF-878D-4C6D-AB74-0D2C04EA624E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DC6BCF-878D-4C6D-AB74-0D2C04EA624E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18D90D69-A1C7-409F-9902-17C9101A9EE4}
+	EndGlobalSection
+EndGlobal

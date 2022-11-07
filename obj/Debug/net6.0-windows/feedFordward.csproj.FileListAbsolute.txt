@@ -1,0 +1,17 @@
+C:\Users\jon_r\Downloads\feedFordward\bin\Debug\net6.0-windows\feedFordward.exe
+C:\Users\jon_r\Downloads\feedFordward\bin\Debug\net6.0-windows\feedFordward.deps.json
+C:\Users\jon_r\Downloads\feedFordward\bin\Debug\net6.0-windows\feedFordward.runtimeconfig.json
+C:\Users\jon_r\Downloads\feedFordward\bin\Debug\net6.0-windows\feedFordward.dll
+C:\Users\jon_r\Downloads\feedFordward\bin\Debug\net6.0-windows\feedFordward.pdb
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.csproj.AssemblyReference.cache
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.Form1.resources
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.csproj.GenerateResource.cache
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.AssemblyInfoInputs.cache
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.AssemblyInfo.cs
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.csproj.CoreCompileInputs.cache
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.dll
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\refint\feedFordward.dll
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.pdb
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.genruntimeconfig.cache
+C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\ref\feedFordward.dll
