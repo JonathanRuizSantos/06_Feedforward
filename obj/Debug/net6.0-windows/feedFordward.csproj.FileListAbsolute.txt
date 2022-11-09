@@ -15,3 +15,37 @@ C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\refint\feedFordwa
 C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.pdb
 C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\feedFordward.genruntimeconfig.cache
 C:\Users\jon_r\Downloads\feedFordward\obj\Debug\net6.0-windows\ref\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\bin\Debug\net6.0-windows\feedFordward.exe
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\bin\Debug\net6.0-windows\feedFordward.deps.json
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\bin\Debug\net6.0-windows\feedFordward.runtimeconfig.json
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\bin\Debug\net6.0-windows\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\bin\Debug\net6.0-windows\feedFordward.pdb
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.csproj.AssemblyReference.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.Form1.resources
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.csproj.GenerateResource.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.GeneratedMSBuildEditorConfig.editorconfig
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.AssemblyInfoInputs.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.AssemblyInfo.cs
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.csproj.CoreCompileInputs.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\refint\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.pdb
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\feedFordward.genruntimeconfig.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\Nueva carpeta\obj\Debug\net6.0-windows\ref\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\bin\Debug\net6.0-windows\feedFordward.exe
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\bin\Debug\net6.0-windows\feedFordward.deps.json
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\bin\Debug\net6.0-windows\feedFordward.runtimeconfig.json
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\bin\Debug\net6.0-windows\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\bin\Debug\net6.0-windows\feedFordward.pdb
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.csproj.AssemblyReference.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.Form1.resources
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.csproj.GenerateResource.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.GeneratedMSBuildEditorConfig.editorconfig
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.AssemblyInfoInputs.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.AssemblyInfo.cs
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.csproj.CoreCompileInputs.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\refint\feedFordward.dll
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.pdb
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\feedFordward.genruntimeconfig.cache
+E:\USER\Documents\Esime\9º semestre\Agentes inteligentes\feedFordward\obj\Debug\net6.0-windows\ref\feedFordward.dll

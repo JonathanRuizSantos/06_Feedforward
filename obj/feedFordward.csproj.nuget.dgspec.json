@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jon_r\\Downloads\\feedFordward\\feedFordward.csproj": {}
+    "E:\\USER\\Documents\\Esime\\9º semestre\\Agentes inteligentes\\feedFordward\\feedFordward.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jon_r\\Downloads\\feedFordward\\feedFordward.csproj": {
+    "E:\\USER\\Documents\\Esime\\9º semestre\\Agentes inteligentes\\feedFordward\\feedFordward.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jon_r\\Downloads\\feedFordward\\feedFordward.csproj",
+        "projectUniqueName": "E:\\USER\\Documents\\Esime\\9º semestre\\Agentes inteligentes\\feedFordward\\feedFordward.csproj",
         "projectName": "feedFordward",
-        "projectPath": "C:\\Users\\jon_r\\Downloads\\feedFordward\\feedFordward.csproj",
-        "packagesPath": "C:\\Users\\jon_r\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jon_r\\Downloads\\feedFordward\\obj\\",
+        "projectPath": "E:\\USER\\Documents\\Esime\\9º semestre\\Agentes inteligentes\\feedFordward\\feedFordward.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "E:\\USER\\Documents\\Esime\\9º semestre\\Agentes inteligentes\\feedFordward\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jon_r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

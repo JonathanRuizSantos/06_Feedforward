@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics.Tracing;
 using System.Windows.Forms;
 
@@ -11,6 +12,7 @@ namespace feedFordward
         double aux_ceros = 1;
         double aux_ceros2 = 1;
 
+        /*
         public struct capa
         {
             public int numcapas;
@@ -23,8 +25,11 @@ namespace feedFordward
             public double[,] w;
         };
 
-        capa[] C1;
+        capa[] C;
         pesos[] W;
+        */
+
+
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +43,14 @@ namespace feedFordward
             filas = Math.Pow(2, entradas);
             CreaTabla(entradas, filas);
             LlenarTabla(entradas, filas);
+            if (rBXOR.Checked)
+            {
+                XOR(entradas, filas);
+            }
+            else
+            {
+                Ejecricio(entradas, filas);
+            }
         }
 
         // *********************************************************************************** FUNCIONES
@@ -57,6 +70,7 @@ namespace feedFordward
             if (rBXOR.Checked)
             {
                 dGResultados.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Y1" });
+
             }
             else if(rBEjercicio.Checked){
                 dGResultados.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "Y1" });
@@ -122,11 +136,161 @@ namespace feedFordward
             aux_ceros2 = 1;
         }
 
-        public void pesosXOR()
+        public void XOR(int entradas, double filas)
         {
-            //W[0].w = new pesos[,] { { 1, 2 }, { 3, 4 } };
+            //pesos[] W = new pesos[2] { 5.3985, 2.5484 };
+            //W = new pesos[2] { 5.3985, 5.22};
+            double[,] w = new double[2, 2] { { 5.191129, 2.758669 }, { 5.473012, 2.769596 } };
+            double[] w2 = new double[2] { 5.839709, -6.186834 };
+            double[] umbral = new double[2] { -1.90289, -4.127002 };
+            double[] umbral2 = new double[1] { -2.570539 };
+            string activacion = "";
+            double ac;
+            double[] activacionDouble = new double[2];
+
+            double auxAc = 0;
+            double[] acSigmoidal = new double[2];
+            double acCapaSalida = 0;
+            double[] auxAcDouble = new double[2];
+
+
+            for (int k = 0; k < 4; k++)
+            {
+
+                for (int i = 0; i < 2; i++)
+                {
+                    //Primer entrada
+                    for (int j = 0; j < entradas; j++)
+                    {
+                        activacion = (string)dGResultados.Rows[k].Cells[j].Value;
+                        ac = double.Parse(activacion);
+                        activacionDouble[j] = ac;
+                    }
+
+                    //Activación de la capa oculta
+                    for (int j = 0; j < 2; j++)
+                    {
+                        auxAc = (w[j, i] * activacionDouble[j]);
+
+                        auxAcDouble[i] = auxAcDouble[i] + auxAc;
+                    }
+
+                    activacionDouble[i] = auxAcDouble[i] + umbral[i];
+                    acSigmoidal[i] = 1 / (1 + Math.Pow(Math.E, -activacionDouble[i]));
+
+                    activacionDouble[0] = 0;
+                    activacionDouble[1] = 0;
+                    auxAcDouble[i] = 0;
+                    //lBSalida.Items.Add(acSigmoidal[i]);
+                }
+
+                //Activación capa de salida
+                for (int j = 0; j < 2; j++)
+                {
+                    auxAc = (w2[j] * acSigmoidal[j]);
+                    acCapaSalida = acCapaSalida + auxAc;
+                }
+
+                acCapaSalida = acCapaSalida + umbral2[0];
+                acCapaSalida = 1 / (1 + Math.Pow(Math.E, -acCapaSalida));
+                //lBSalida.Items.Add(acCapaSalida);
+                dGResultados.Rows[k].Cells[entradas].Value = acCapaSalida;
+                auxAc = 0;
+                acCapaSalida = 0;
+                activacionDouble[0] = 0;
+                activacionDouble[1] = 0;
+                acSigmoidal[0] = 0;
+                acSigmoidal[1] = 0;
+                activacion = "";
+            }
         }
 
-       
+        public void Ejecricio(int entradas, double filas)
+        {
+            //pesos[] W = new pesos[2] { 5.3985, 2.5484 };
+            //W = new pesos[2] { 5.3985, 5.22};
+            double[,] w = new double[2, 2] { { 1, 1 }, { 1, 1 } };
+            double[] w2 = new double[2] { 1, 1 };
+            double[,] w3 = new double[2, 2] { { 1, 1 }, { 1, 1 } };
+            double[] umbral = new double[2] { 0.5, 0.5 };
+            double[] umbral2 = new double[2] { 0.5, 0.5 };
+            double[] umbral3 = new double[2] { 0.5, 0.5 };
+            string activacion = "";
+            double ac;
+            double[] activacionDouble = new double[2];
+
+            double auxAc = 0;
+            double[] acSigmoidal = new double[2];
+            double acCapaSalida = 0;
+            double[] auxAcDouble = new double[2];
+
+
+            for (int k = 0; k < 4; k++)
+            {
+
+                for (int i = 0; i < 2; i++)
+                {
+                    //Primer entrada
+                    for (int j = 0; j < entradas; j++)
+                    {
+                        activacion = (string)dGResultados.Rows[k].Cells[j].Value;
+                        ac = double.Parse(activacion);
+                        activacionDouble[j] = ac;
+                    }
+
+                    //Activación de la capa oculta
+                    for (int j = 0; j < 2; j++)
+                    {
+                        auxAc = (w[j, i] * activacionDouble[j]);
+                        auxAcDouble[i] = auxAcDouble[i] + auxAc;
+                    }
+
+                    activacionDouble[i] = auxAcDouble[i] + umbral[i];
+                    acSigmoidal[i] = 1 / (1 + Math.Pow(Math.E, -activacionDouble[i]));
+
+                    activacionDouble[0] = 0;
+                    activacionDouble[1] = 0;
+                    auxAcDouble[i] = 0;
+                    //lBSalida.Items.Add(acSigmoidal[i]);
+                }
+
+                for (int i = 0; i < 2; i++)
+                {
+                    //Activación de la capa oculta
+                    for (int j = 0; j < 2; j++)
+                    {
+                        auxAc = (w[j, i] * acSigmoidal[i]);
+                        auxAcDouble[i] = auxAcDouble[i] + auxAc;
+                    }
+
+                    activacionDouble[i] = auxAcDouble[i] + umbral[i];
+                    acSigmoidal[i] = 1 / (1 + Math.Pow(Math.E, -activacionDouble[i]));
+
+                    activacionDouble[0] = 0;
+                    activacionDouble[1] = 0;
+                    auxAcDouble[i] = 0;
+                    //lBSalida.Items.Add(acSigmoidal[i]);
+                }
+
+                //Activación capa de salida
+                for (int j = 0; j < 2; j++)
+                {
+                    auxAc = (w2[j] * acSigmoidal[j]);
+                    acCapaSalida = acCapaSalida + auxAc;
+                }
+
+                acCapaSalida = acCapaSalida + umbral2[0];
+                acCapaSalida = 1 / (1 + Math.Pow(Math.E, -acCapaSalida));
+                //lBSalida.Items.Add(acCapaSalida);
+                dGResultados.Rows[k].Cells[entradas].Value = acCapaSalida;
+                auxAc = 0;
+                acCapaSalida = 0;
+                activacionDouble[0] = 0;
+                activacionDouble[1] = 0;
+                acSigmoidal[0] = 0;
+                acSigmoidal[1] = 0;
+                activacion = "";
+            }
+        }
     }
 }
