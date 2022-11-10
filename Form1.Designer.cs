@@ -39,31 +39,30 @@
             // 
             // lBSalida
             // 
+            this.lBSalida.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lBSalida.FormattingEnabled = true;
-            this.lBSalida.ItemHeight = 15;
-            this.lBSalida.Location = new System.Drawing.Point(452, 32);
-            this.lBSalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lBSalida.ItemHeight = 20;
+            this.lBSalida.Location = new System.Drawing.Point(517, 43);
             this.lBSalida.Name = "lBSalida";
-            this.lBSalida.Size = new System.Drawing.Size(253, 349);
+            this.lBSalida.Size = new System.Drawing.Size(289, 464);
             this.lBSalida.TabIndex = 0;
             // 
             // dGResultados
             // 
             this.dGResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGResultados.Location = new System.Drawing.Point(25, 166);
-            this.dGResultados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dGResultados.Location = new System.Drawing.Point(29, 221);
             this.dGResultados.Name = "dGResultados";
             this.dGResultados.RowHeadersWidth = 51;
             this.dGResultados.RowTemplate.Height = 29;
-            this.dGResultados.Size = new System.Drawing.Size(411, 214);
+            this.dGResultados.Size = new System.Drawing.Size(470, 285);
             this.dGResultados.TabIndex = 1;
             // 
             // btFeedfordward
             // 
-            this.btFeedfordward.Location = new System.Drawing.Point(256, 56);
-            this.btFeedfordward.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btFeedfordward.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btFeedfordward.Location = new System.Drawing.Point(293, 75);
             this.btFeedfordward.Name = "btFeedfordward";
-            this.btFeedfordward.Size = new System.Drawing.Size(115, 42);
+            this.btFeedfordward.Size = new System.Drawing.Size(131, 56);
             this.btFeedfordward.TabIndex = 2;
             this.btFeedfordward.Text = "Feedforward";
             this.btFeedfordward.UseVisualStyleBackColor = true;
@@ -73,10 +72,10 @@
             // 
             this.rBXOR.AutoSize = true;
             this.rBXOR.Checked = true;
-            this.rBXOR.Location = new System.Drawing.Point(35, 56);
-            this.rBXOR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rBXOR.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rBXOR.Location = new System.Drawing.Point(40, 75);
             this.rBXOR.Name = "rBXOR";
-            this.rBXOR.Size = new System.Drawing.Size(48, 19);
+            this.rBXOR.Size = new System.Drawing.Size(66, 27);
             this.rBXOR.TabIndex = 3;
             this.rBXOR.TabStop = true;
             this.rBXOR.Text = "XOR";
@@ -85,10 +84,10 @@
             // rBEjercicio
             // 
             this.rBEjercicio.AutoSize = true;
-            this.rBEjercicio.Location = new System.Drawing.Point(35, 92);
-            this.rBEjercicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rBEjercicio.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rBEjercicio.Location = new System.Drawing.Point(40, 123);
             this.rBEjercicio.Name = "rBEjercicio";
-            this.rBEjercicio.Size = new System.Drawing.Size(69, 19);
+            this.rBEjercicio.Size = new System.Drawing.Size(93, 27);
             this.rBEjercicio.TabIndex = 4;
             this.rBEjercicio.Text = "Ejercicio";
             this.rBEjercicio.UseVisualStyleBackColor = true;
@@ -96,24 +95,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 139);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(29, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 15);
+            this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "Resultados";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 399);
+            this.ClientSize = new System.Drawing.Size(850, 532);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rBEjercicio);
             this.Controls.Add(this.rBXOR);
             this.Controls.Add(this.btFeedfordward);
             this.Controls.Add(this.dGResultados);
             this.Controls.Add(this.lBSalida);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Feedforward";
             ((System.ComponentModel.ISupportInitialize)(this.dGResultados)).EndInit();

@@ -12,24 +12,6 @@ namespace feedFordward
         double aux_ceros = 1;
         double aux_ceros2 = 1;
 
-        /*
-        public struct capa
-        {
-            public int numcapas;
-            public double[] activacion;
-            public double[] umbral;
-        };
-
-        public struct pesos
-        {
-            public double[,] w;
-        };
-
-        capa[] C;
-        pesos[] W;
-        */
-
-
         public Form1()
         {
             InitializeComponent();
@@ -138,8 +120,6 @@ namespace feedFordward
 
         public void XOR(int entradas, double filas)
         {
-            //pesos[] W = new pesos[2] { 5.3985, 2.5484 };
-            //W = new pesos[2] { 5.3985, 5.22};
             double[,] w = new double[2, 2] { { 5.191129, 2.758669 }, { 5.473012, 2.769596 } };
             double[] w2 = new double[2] { 5.839709, -6.186834 };
             double[] umbral = new double[2] { -1.90289, -4.127002 };
@@ -152,10 +132,16 @@ namespace feedFordward
             double[] acSigmoidal = new double[2];
             double acCapaSalida = 0;
             double[] auxAcDouble = new double[2];
-
+            int cont = 1;
 
             for (int k = 0; k < 4; k++)
             {
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Patron " + (k+1).ToString());
+                cont = 1;
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Capa No." + cont);
+                lBSalida.Items.Add("");
 
                 for (int i = 0; i < 2; i++)
                 {
@@ -184,6 +170,16 @@ namespace feedFordward
                     //lBSalida.Items.Add(acSigmoidal[i]);
                 }
 
+                for (int m = 0; m < 2; m++)
+                {
+                    lBSalida.Items.Add("C(" + cont + ").ac(" + m + ") = " + acSigmoidal[m]);
+                }
+
+                cont++;
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Capa No." + cont);
+                lBSalida.Items.Add("");
+
                 //Activación capa de salida
                 for (int j = 0; j < 2; j++)
                 {
@@ -195,6 +191,9 @@ namespace feedFordward
                 acCapaSalida = 1 / (1 + Math.Pow(Math.E, -acCapaSalida));
                 //lBSalida.Items.Add(acCapaSalida);
                 dGResultados.Rows[k].Cells[entradas].Value = acCapaSalida;
+
+                lBSalida.Items.Add("C(" + cont + ").ac(" + "0" + ") = " + acCapaSalida);
+
                 auxAc = 0;
                 acCapaSalida = 0;
                 activacionDouble[0] = 0;
@@ -207,10 +206,8 @@ namespace feedFordward
 
         public void Ejecricio(int entradas, double filas)
         {
-            //pesos[] W = new pesos[2] { 5.3985, 2.5484 };
-            //W = new pesos[2] { 5.3985, 5.22};
             double[,] w = new double[2, 2] { { 1, 1 }, { 1, 1 } };
-            double[] w2 = new double[2] { 1, 1 };
+            double[,] w2 = new double[2,2] { { 1, 1 }, { 1, 1 }};
             double[,] w3 = new double[2, 2] { { 1, 1 }, { 1, 1 } };
             double[] umbral = new double[2] { 0.5, 0.5 };
             double[] umbral2 = new double[2] { 0.5, 0.5 };
@@ -223,15 +220,22 @@ namespace feedFordward
             double[] acSigmoidal = new double[2];
             double acCapaSalida = 0;
             double[] auxAcDouble = new double[2];
+            int cont = 1;
 
 
-            for (int k = 0; k < 4; k++)
+            for (int k = 0; k < 4; k++) // Recorre las filas
             {
-
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Patron No." + (k+1).ToString());
+                cont = 1;
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Capa No." + cont);
+                lBSalida.Items.Add("");
                 for (int i = 0; i < 2; i++)
                 {
+                    
                     //Primer entrada
-                    for (int j = 0; j < entradas; j++)
+                    for (int j = 0; j < entradas; j++) // recorre las columnas
                     {
                         activacion = (string)dGResultados.Rows[k].Cells[j].Value;
                         ac = double.Parse(activacion);
@@ -253,13 +257,21 @@ namespace feedFordward
                     auxAcDouble[i] = 0;
                     //lBSalida.Items.Add(acSigmoidal[i]);
                 }
+                for (int m = 0; m < 2; m++)
+                {
+                    lBSalida.Items.Add("C(" + cont + ").ac(" + m + ") = " + acSigmoidal[m]);
+                }
 
+                cont++;
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Capa No." + cont);
+                lBSalida.Items.Add("");
                 for (int i = 0; i < 2; i++)
                 {
                     //Activación de la capa oculta
                     for (int j = 0; j < 2; j++)
                     {
-                        auxAc = (w[j, i] * acSigmoidal[i]);
+                        auxAc = (w2[j, i] * acSigmoidal[i]);
                         auxAcDouble[i] = auxAcDouble[i] + auxAc;
                     }
 
@@ -271,20 +283,49 @@ namespace feedFordward
                     auxAcDouble[i] = 0;
                     //lBSalida.Items.Add(acSigmoidal[i]);
                 }
-
-                //Activación capa de salida
-                for (int j = 0; j < 2; j++)
+                for (int m = 0; m < 2; m++)
                 {
-                    auxAc = (w2[j] * acSigmoidal[j]);
-                    acCapaSalida = acCapaSalida + auxAc;
+                    lBSalida.Items.Add("C(" + cont + ").ac(" + m + ") = " + acSigmoidal[m]);
                 }
 
-                acCapaSalida = acCapaSalida + umbral2[0];
-                acCapaSalida = 1 / (1 + Math.Pow(Math.E, -acCapaSalida));
-                //lBSalida.Items.Add(acCapaSalida);
-                dGResultados.Rows[k].Cells[entradas].Value = acCapaSalida;
+                cont++;
+                lBSalida.Items.Add("");
+                lBSalida.Items.Add("Capa No." + cont);
+                lBSalida.Items.Add("");
+                for (int i = 0; i < 2; i++) {
+                    //Activación capa de salida
+                    for (int j = 0; j < 2; j++)
+                    {
+                        if(i == 0 && j == 1)
+                        {
+                            auxAc = (w3[1, 0] * acSigmoidal[j]);
+                        }
+                        else if(i == 1 && j == 0)
+                        {
+                            auxAc = (w3[0, 1] * acSigmoidal[j]);
+                        }
+                        else
+                        {
+                            auxAc = (w3[i, j] * acSigmoidal[j]);
+                        }
+                        acCapaSalida = acCapaSalida + auxAc;
+                    }
+
+                    acCapaSalida = acCapaSalida + umbral2[i];
+                    acCapaSalida = 1 / (1 + Math.Pow(Math.E, -acCapaSalida));
+
+                    if (i == 0) { 
+                        dGResultados.Rows[k].Cells[entradas].Value = acCapaSalida;
+                        lBSalida.Items.Add("C(" + cont + ").ac(" + i + ") = " + acCapaSalida);
+                    }
+                    else { 
+                        dGResultados.Rows[k].Cells[entradas+1].Value = acCapaSalida;
+                        lBSalida.Items.Add("C(" + cont + ").ac(" + i + ") = " + acCapaSalida);
+                    }
+                    acCapaSalida = 0;
+                }
+
                 auxAc = 0;
-                acCapaSalida = 0;
                 activacionDouble[0] = 0;
                 activacionDouble[1] = 0;
                 acSigmoidal[0] = 0;
